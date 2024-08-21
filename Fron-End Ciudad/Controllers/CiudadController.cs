@@ -12,9 +12,11 @@ namespace Fron_End_Ciudad.Controllers
            
             ViewBag.Departamentos = new List<SelectListItem>
         {
-            new SelectListItem { Value = "1", Text = "Departamento 1" },
-            new SelectListItem { Value = "2", Text = "Departamento 2" },
-            new SelectListItem { Value = "3", Text = "Departamento 3" }
+            new SelectListItem { Value = "1", Text = "Departamento Distrito Capital" },
+            new SelectListItem { Value = "2", Text = "Departamento Cundinamarca" },
+            new SelectListItem { Value = "3", Text = "Departamento Antioquia" },
+            new SelectListItem { Value = "4", Text = "Departamento Choco" }
+
         };
 
             return View();
@@ -32,9 +34,10 @@ namespace Fron_End_Ciudad.Controllers
            
             ViewBag.Departamentos = new List<SelectListItem>
         {
-            new SelectListItem { Value = "1", Text = "Departamento 1" },
-            new SelectListItem { Value = "2", Text = "Departamento 2" },
-            new SelectListItem { Value = "3", Text = "Departamento 3" }
+            new SelectListItem { Value = "1", Text = "Departamento Distrito Capital" },
+            new SelectListItem { Value = "2", Text = "Departamento Cundinamarca" },
+            new SelectListItem { Value = "3", Text = "Departamento Antioquia" },
+            new SelectListItem { Value = "4", Text = "Departamento Choco" }
         };
             return View(ciudad);
         }
