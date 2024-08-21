@@ -1,0 +1,24 @@
+﻿@model TuProyecto.Models.Ciudad
+@{
+    ViewBag.Title = "Ingresar Información de la Ciudad";
+}
+
+<h2>Ingresar Información de la Ciudad</h2>
+
+<form asp-action="Crear" method="post">
+    <div>
+        <label>Código de Ciudad:</label>
+        <input asp-for="CodigoCiudad" type="number" />
+    </div>
+    <div>
+        <label>Nombre de Ciudad:</label>
+        <input asp-for="NombreCiudad" type="text" />
+    </div>
+    <div>
+        <label>Código del Departamento:</label>
+        <select asp-for="CodigoDepartamento" asp-items="ViewBag.Departamentos"></select>
+    </div>
+    <div>
+        <button type="submit">Recibir Información</button>
+    </div>
+</form>
